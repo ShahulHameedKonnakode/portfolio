@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahul Manikkaparambath</title>
+    <!-- style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- script -->
+
+     <!-- Bootstrap Script -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+     <!-- FontAwesome for Icons -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <script src="main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#darkModeToggle").click(function () {
+                let currentTheme = $("html").attr("data-bs-theme");
+                let newTheme = currentTheme === "light" ? "dark" : "light";
+                $("html").attr("data-bs-theme", newTheme);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm fixed-top">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img
+            class="animate__animated animate__backInLeft logo" src="icons/logo_clr_1.png" alt=""><img
+            class="animate__animated animate__bounce logo" src="icons/logo_clr_2.png" alt=""><img
+            class="animate__animated animate__backInRight logo" src="icons/logo_clr_3.png" alt="">
+             
+            </a>
+
+            <!-- Navbar Toggler (Mobile View) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Items -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html#about" class="nav-link">My Journey</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a href="index.html#mywork" class="nav-link">My Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#myShelf" class="nav-link">My Shelf</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="myResume.html" class="nav-link">My Resume</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Dark Mode Toggle -->
+            <button id="darkModeToggle" class="btn btn-outline-secondary ms-3">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+
+
+    <!-- Resume Section -->
+    <div class="container-fluid mt-5 pt-5">
+        <div class="container">
+            <h1 class="display-1 mt-5">MY RESUME</h1>
+            <hr>
+        </div>
+        <div class="container mt-5">
+            <div class="card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="imges\SAVE_20241209_102928.jpg" class="img-fluid rounded-start" alt="Profile Image">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Shahul Hameed Konnakode</h5>
+                            <p class="card-text">
+                                As a dedicated full-stack developer with 6 months of experience, I bring a strong
+                                foundation in both front-end and back-end technologies.
+                                My passion lies in creating robust, user-friendly web applications that solve real-world
+                                problems.
+                            </p>
+
+                            <div class="container mt-5">
+                                <div class="accordion" id="mainAccordion">
+
+                                    <!-- Experience Section -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingExperience">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseExperience" aria-expanded="true"
+                                                aria-controls="collapseExperience">Experience</button>
+                                        </h2>
+                                        <div id="collapseExperience" class="accordion-collapse collapse show"
+                                            aria-labelledby="headingExperience" data-bs-parent="#mainAccordion">
+                                            <div class="accordion-body">
+                                                <strong>Python Full Stack Developer Trainee</strong> (June 2024 -
+                                                Present) <br>
+                                                <span class="text-body-secondary">Quest Innovative Solutions,
+                                                    Kozhikode</span>
+                                                <p>Worked on designing and deploying web applications using HTML, CSS,
+                                                    JavaScript, Python, Angular, Bootstrap, and Django.</p>
+
+                                                <strong>Freelance Graphic Designer</strong> (August 2019 - June 2024)
+                                                <br>
+                                                <span class="text-body-secondary">Dzone Ads, Pulikkal, Malappuram</span>
+                                                <p>Designed brochures, flyers, social media graphics, book layouts, and
+                                                    reports.</p>
+
+                                                <strong>Graphic Designer & Data Entry Operator</strong> (April 2015 -
+                                                August 2019) <br>
+                                                <span class="text-body-secondary">Al Jazeera International LLC,
+                                                    Oman</span>
+                                                <p>Handled large volumes of data and created marketing materials like
+                                                    posters and flyers.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Education Section Without Sub-Accordions -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingEducation">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseEducation"
+                                                aria-expanded="false"
+                                                aria-controls="collapseEducation">Education</button>
+                                        </h2>
+                                        <div id="collapseEducation" class="accordion-collapse collapse"
+                                            aria-labelledby="headingEducation" data-bs-parent="#mainAccordion">
+                                            <div class="accordion-body">
+                                                <strong>Master's in English Literature</strong> - Indira Gandhi National
+                                                Open University (IGNOU), 2021 <br>
+                                                <strong>BA English Literature</strong> - Indira Gandhi National Open
+                                                University (IGNOU), 2014 <br>
+                                                <strong>Plus Two</strong> - March 2009 <br>
+                                                <strong>SSLC</strong> - HIOHS Olavattur, March 2006
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Technical Skills Section -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingSkills">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseSkills"
+                                                aria-expanded="false" aria-controls="collapseSkills">Technical
+                                                Skills</button>
+                                        </h2>
+                                        <div id="collapseSkills" class="accordion-collapse collapse"
+                                            aria-labelledby="headingSkills" data-bs-parent="#mainAccordion">
+                                            <div class="accordion-body">
+                                                HTML & CSS, JavaScript, Python, Angular, Bootstrap, jQuery, MySQL, Git,
+                                                Adobe Photoshop, CorelDraw, InDesign, Microsoft Office.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Projects Section -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingProjects">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseProjects"
+                                                aria-expanded="false" aria-controls="collapseProjects">Projects</button>
+                                        </h2>
+                                        <div id="collapseProjects" class="accordion-collapse collapse"
+                                            aria-labelledby="headingProjects" data-bs-parent="#mainAccordion">
+                                            <div class="accordion-body">
+                                                <strong>Website Development:</strong> <a href="http://www.shadhuli.com"
+                                                    target="_blank">www.shadhuli.com</a>, <a
+                                                    href="http://www.dzoneads.com" target="_blank">www.dzoneads.com</a>
+                                                <br><br>
+                                                <strong>Quest Internship Project:</strong> Developed an interactive web
+                                                application with enhanced UI/UX using HTML, CSS, and JavaScript.
+                                                <br><br>
+                                                <strong>3. Phone Book Project Using Python.</strong> This project allows
+                                                you to create users, issue books, return books, and calculate fines,
+                                                making it a comprehensive tool for managing library operations.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-bg-dark">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-between p-4 text-bg-primary bg-opacity-25">
+        <!-- Left -->
+        <div class="me-5">
+            <span>Get connected with me on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+            <a href="" class="text-white text-decoration-none p-1 me-4">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="" class="text-white text-decoration-none p-1 me-4">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/@CodewithShahul" class="text-white text-decoration-none p-1 me-4">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/codewithshahul/" class="text-white text-decoration-none p-1 me-4">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/shahul-hameed-kk-a04b38115/"
+                class="text-white text-decoration-none p-1 me-4">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/ShahulHameedKonnakode" class="text-white text-decoration-none p-1 me-4">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+        <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+        <div class="container text-center text-md-start mt-5 ">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold"><img class="animate__animated animate__backInLeft logo"
+                            src="icons/logo_clr_1.png" alt=""><img class="animate__animated animate__bounce logo"
+                            src="icons/logo_clr_2.png" alt=""><img class="animate__animated animate__backInRight logo"
+                            src="icons/logo_clr_3.png" alt=""></h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: blue; height: 2px" />
+                    <p>
+                        I’m Shahul Hameed KK, a passionate Full Stack Developer with expertise in front-end and
+                        back-end development.
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Just About Me</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: blue; height: 2px" />
+                    <p>
+                        <a href="#mywork" class="text-white text-decoration-none text-decoration-none">My Work</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white text-decoration-none text-decoration-none">My Shelf</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white text-decoration-none text-decoration-none">My Resume</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white text-decoration-none text-decoration-none">Don't Imitate Me
+                            but jus follow </a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Useful links</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: blue; height: 2px" />
+                    <p>
+                        <a href="#!" class="text-white text-decoration-none text-decoration-none">Dzone Ads</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white text-decoration-none text-decoration-none">Become an
+                            Affiliate</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white text-decoration-none text-decoration-none">Enroll Our Online
+                            Couses</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white text-decoration-none text-decoration-none">Help</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Contact</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: blue; height: 2px" />
+                    <p><i class="fas fa-home mr-3"></i> Pulikkal, Malappuram</p>
+                    <p><i class="fas fa-envelope mr-3"></i> info@dzoneads.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> + 91 954 483 7026</p>
+                    <p><i class="fas fa-print mr-3"></i> + 91 974 783 7026</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2025 Copyright:
+        <a class="text-white text-decoration-none link-primary" href="https://dzoneads.com/">Dzone Ads</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
+
+</html>

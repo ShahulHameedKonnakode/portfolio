@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahul Manikkaparambath</title>
+    <!-- style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- script -->
+
+     <!-- Bootstrap Script -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+     <!-- FontAwesome for Icons -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <script src="main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#darkModeToggle").click(function () {
+                let currentTheme = $("html").attr("data-bs-theme");
+                let newTheme = currentTheme === "light" ? "dark" : "light";
+                $("html").attr("data-bs-theme", newTheme);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm fixed-top">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img
+            class="animate__animated animate__backInLeft logo" src="icons/logo_clr_1.png" alt=""><img
+            class="animate__animated animate__bounce logo" src="icons/logo_clr_2.png" alt=""><img
+            class="animate__animated animate__backInRight logo" src="icons/logo_clr_3.png" alt="">
+             
+            </a>
+
+            <!-- Navbar Toggler (Mobile View) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Items -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">My Journey</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a href="#mywork" class="nav-link">My Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#myShelf" class="nav-link">My Shelf</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="myResume.html" class="nav-link">My Resume</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Dark Mode Toggle -->
+            <button id="darkModeToggle" class="btn btn-outline-secondary ms-3">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+   
+
+   
+   
+
+
+
+    <div class="container-fluid mt-5 pt-5 top-section">
+        <section class="section-top">
+            <div class="row g-3">
+
+                <div class="col-md-2">
+                    <div class="image-container">
+                        <img src="imges/home_img_7.jpg" class="img-fluid image " alt="Beautiful lights">
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="image-container">
+                        <img src="imges/home_img_2.jpg" class="img-fluid image" alt="Beautiful lights">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="image-container">
+                        <img src="imges/home_img_1.jpg" class="img-fluid active-img" alt="Beautiful lights">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="image-container">
+                        <img src="imges/home_img_5.jpg" class="img-fluid image" alt="Beautiful lights">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="image-container">
+                        <img src="imges/home_img_6.jpg" class="img-fluid image" alt="Beautiful lights">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <section id="about">
+
+        <div class="container-fluid pt-4 about-section bg-primary-subtle">
+            <div class="container">
+                <h1 class="display-1 mt-5">MY JOURNEY</h1>
+                <hr>
+            </div>
+            <!-- <hr> -->
+            <div class="row">
+
+                <div class="col-12 col-md-6 text-center p-3">
+                    <p class="h1 whoare-h1">Who are I ?</p>
+                    <p class="text-start whoare-text">
+                        I’m Shahul Hameed KK, a passionate Full Stack Developer with expertise in front-end and back-end
+                        development. With hands-on experience in Python, Angular, Bootstrap, Django, HTML, CSS, and
+                        JavaScript, I specialize in building dynamic, user-friendly web applications that enhance
+                        digital
+                        experiences. My journey started with graphic design, giving me an eye for aesthetics, and
+                        evolved
+                        into full-stack development, allowing me to craft functional and visually appealing web
+                        solutions. I
+                        thrive on learning and keeping up with the latest industry trends to deliver high-performance,
+                        scalable applications. Let’s collaborate to build something amazing!
+                    </p>
+
+
+                    <div class="accordion accordion-flush whoare-text" id="whoare">
+                        <h5 class="text-start whoare-text">My Key Skills</h5>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Front-End
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#whoare">
+                                <div class="accordion-body">HTML, CSS, JavaScript, jQuery, Bootstrap</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Back-End
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#whoare">
+                                <div class="accordion-body">Python, Django, MySQL</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Tools & Frameworks
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#whoare">
+                                <div class="accordion-body">Git, Angular, Microsoft Office, Adobe Photoshop, CorelDraw,
+                                    InDesign</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="col-12 col-md 6 p-3">
+                    <p class="h1 text-center history-h1">My History</p>
+                    <p class="text-start history-text">
+                        I began my professional career as a Graphic Designer and Data Entry Operator at Al Jazeera
+                        International LLC (2015-2019) in Oman, where I developed strong design and data management
+                        skills. I
+                        then transitioned into freelance graphic design with Dzone Ads (2019-2024), creating visually
+                        engaging designs for businesses.
+
+                        My passion for technology led me to upskill in Full Stack Development, and I completed a Python
+                        Full
+                        Stack Internship at Quest Innovative Solutions. Currently, as a Full Stack Developer Trainee at
+                        Quest Innovative Solutions (2024 - Present), I work on developing high-performance web
+                        applications,
+                        specializing in e-commerce solutions and API development.
+
+                        With a strong foundation in design, development, and data handling, I am ready to take on new
+                        challenges in web development, UI/UX design, and software engineering.
+                    </p>
+                    <a class="btn btn-primary history-text" href="myResume.html">Read More</a>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+    </section>
+
+
+    <!-- My Work Section -->
+    <section id="mywork">
+        <div class="container">
+            <h1 class="display-1 mt-5">MY WORKS</h1>
+            <hr>
+        </div>
+        <div class="container-fluid p-5 d-flex justify-content-center">
+
+
+
+            <div class="card-group">
+                <div class="card m-3" style="max-width: 25rem;">
+                    <img src="imges/1722999907282.jpeg" class="card-img-top">
+
+                    <div class="card-body hover-zoom">
+                        <h5 class="card-heading">Understanding Data Abstraction in Python: An Essential Guide for
+                            Beginners..!! </h5>
+                        <div class="card-text">
+                            Data abstraction is a fundamental concept in object-oriented programming (OOP) that helps in
+                            managing complexity by hiding the unnecessary details from the user and exposing only the
+                            essential features. In Python, data abstraction is achieved using classes and objects. Let’s
+                            dive into this concept with a detailed explanation and some real-world examples.
+                        </div>
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7227084562630144000/"
+                            class="btn btn-primary mt-3 mb-2">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="max-width: 25rem;">
+                    <iframe width="400" height="290" src="https://www.youtube.com/embed/LfBLwGEgtGA?si=gvVlA_gIvQF0uoFZ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <div class="card-body">
+                        <h5 class="card-heading">📚 Library Management System📚: Another Python Project for Beginners.
+                        </h5>
+                        <div class="card-text">
+                            I'm excited to share a project on GitHub, a Library Management System designed with
+                            beginners in mind. This project is a great way to dive deeper into Python and understand
+                            some of its fundamental concepts through hands-on practice.
+
+                            This project allows you to create users, issue books, return books, and calculate fines,
+                            making it a comprehensive tool for managing library operations.
+
+                        </div>
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7229875338317602816/"
+                            class="btn btn-primary mt-3 mb-2">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="max-width: 25rem;">
+                    <img src="imges/1727535088445.jpeg" class="card-img-top">
+
+                    <div class="card-body">
+                        <h5 class="card-heading">🚀 𝗗𝘆𝗻𝗮𝗺𝗶𝗰 𝗗𝗮𝘁𝗮 𝗘𝗻𝘁𝗿𝘆 𝗙𝗼𝗿𝗺 𝘄𝗶𝘁𝗵
+                            𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲:
+                            𝗔 𝗣𝗲𝗿𝗳𝗲𝗰𝘁 𝗣𝘆𝘁𝗵𝗼𝗻 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗳𝗼𝗿 𝗕𝗲𝗴𝗶𝗻𝗻𝗲𝗿𝘀! 🚀 </h5>
+                        <div class="card-text">
+                            <!-- 𝘏𝘦𝘳𝘦 𝘪𝘴 𝘢 𝘥𝘺𝘯𝘢𝘮𝘪𝘤 𝘋𝘢𝘵𝘢 𝘌𝘯𝘵𝘳𝘺 𝘍𝘰𝘳𝘮 𝘶𝘴𝘪𝘯𝘨 𝙏𝙠𝙞𝙣𝙩𝙚𝙧 𝘧𝘰𝘳
+                        𝘵𝘩𝘦 𝘜𝘐 𝘢𝘯𝘥 𝙎𝙌𝙇𝙞𝙩𝙚 𝘧𝘰𝘳 𝘵𝘩𝘦 𝘥𝘢𝘵𝘢𝘣𝘢𝘴𝘦 𝘮𝘢𝘯𝘢𝘨𝘦𝘮𝘦𝘯𝘵. 🎉
+
+
+                        <p>
+                            This project integrates several powerful Python concepts into one user-friendly interface:
+                        </p> -->
+                            <ul>
+                                ✨ 𝗞𝗲𝘆 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀:
+                                <li>🟦 𝙐𝙨𝙚𝙧 𝙍𝙚𝙜𝙞𝙨𝙩𝙧𝙖𝙩𝙞𝙤𝙣 𝙁𝙤𝙧𝙢</li>
+                                <li>🟩 𝘿𝙖𝙩𝙖𝙗𝙖𝙨𝙚 𝙄𝙣𝙩𝙚𝙜𝙧𝙖𝙩𝙞𝙤𝙣</li>
+                                <li>🟥 𝙐𝙨𝙚𝙧 𝙐𝙥𝙙𝙖𝙩𝙚 & 𝘿𝙚𝙡𝙚𝙩𝙞𝙤𝙣</li>
+                                <li>🟦 𝙁𝙤𝙧𝙢 𝙑𝙖𝙡𝙞𝙙𝙖𝙩𝙞𝙤𝙣</li>
+                                <li>🟩 𝙄𝙣𝙩𝙚𝙧𝙖𝙘𝙩𝙞𝙫𝙚 𝙐𝙄 𝙬𝙞𝙩𝙝 𝙏𝙠𝙞𝙣𝙩𝙚𝙧</li>
+                                <li>🟥 𝙍𝙚𝙨𝙚𝙩 𝙁𝙞𝙚𝙡𝙙𝙨:
+                                <li>🟦 𝘾𝙤𝙣𝙛𝙞𝙧𝙢𝙖𝙩𝙞𝙤𝙣 𝙋𝙧𝙤𝙢𝙥𝙩𝙨</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7227084562630144000/"
+                            class="btn btn-primary mt-3 mb-2">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="max-width: 25rem;">
+                    <img src="imges/1722498106896.jpeg" class="card-img-top">
+
+                    <div class="card-body">
+                        <h5 class="card-heading">Understanding self in Python: A Guide for Beginners.</h5>
+                        <div class="card-text">
+                            What is self?
+                            In Python, self is not a keyword, but it plays a crucial role in object-oriented programming
+                            (OOP). When you create an instance (object) of a class, self refers to that specific
+                            instance. It allows you to access and manipulate the object’s attributes and methods.
+
+                            <h6> Why Do We Use self?</h6>
+
+                            1. Instance Representation:
+                            self represents the current object within a class.
+
+
+                        </div>
+                        <a href="https://www.linkedin.com/in/shahul-hameed-konnakode-a04b38115/recent-activity/all/"
+                            class="btn btn-primary mt-3 mb-2">Read More</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </section>
+    <!-- myShelf -->
+    <section id="myShelf">
+        <div class="cotainer-fluid bg-primary-subtle p-4">
+            <div class="container">
+                <h1 class="display-1 mt-5">MY SHELF</h1>
+                <hr>
+            </div>
+
+            <div class="container-fluid bg-primary-subtle p-5 d-flex justify-content-evenly">
+
+                <div class="card-group ">
+
+                    <div class="card m-2 rounded-4 bg-primary-subtle border border-primary-subtle"
+                        style="max-width: 25rem ;">
+                        <img src="imges/football.png" alt="" class="card-img myShelfimg rounded-4 p-5 ">
+
+                        <div class="card-body">
+                            <h3 class="card-heading text-center display-5">
+
+                                My Favourite Game
+
+                            </h3>
+                            <p class="card-text text-center">
+                                Football is more than a game to me; it's about teamwork, strategy, and perseverance. It
+                                inspires my approach to problem-solving and collaboration, driving me to strive for
+                                excellence in every challenge.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="card m-2 rounded-4 bg-primary-subtle border border-primary-subtle"
+                        style="max-width: 25rem;">
+                        <img src="imges/music.png" alt="" class="card-img-top rounded-4 p-5">
+
+                        <div class="card-body">
+                            <h3 class="card-heading text-center display-5">
+
+                                My Favourite Music
+
+                            </h3>
+                            <p class="card-text">
+                                "Nadanpattu, a soulful traditional music genre, reflects the cultural richness of
+                                Kerala. It blends rhythm and melody, evoking deep emotions and connecting with nature."
+                            </p>
+
+                        </div>
+                    </div>
+
+
+                    <div class="card m-2  rounded-4 bg-primary-subtle border border-primary-subtle"
+                        style="max-width: 25rem;">
+                        <img src="imges/book.png" alt="" class="card-img-top rounded-4 p-5">
+
+                        <div class="card-body">
+                            <h5 class="card-heading text-center display-5">
+
+                                My Favourite Book
+
+                            </h5>
+                            <p class="card-text">
+                                War and Peace is a literary work by the Russian author Leo Tolstoy. Set during the
+                                Napoleonic Wars, the work comprises both a fictional narrative and chapters in which
+                                Tolstoy discusses history and philosophy. .
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-bg-dark">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-between p-4 text-bg-primary bg-opacity-25">
+            <!-- Left -->
+            <div class="me-5">
+                <span>Get connected with me on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="text-white text-decoration-none p-1 me-4">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="" class="text-white text-decoration-none p-1 me-4">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/@CodewithShahul" class="text-white text-decoration-none p-1 me-4">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://www.instagram.com/codewithshahul/" class="text-white text-decoration-none p-1 me-4">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shahul-hameed-kk-a04b38115/"
+                    class="text-white text-decoration-none p-1 me-4">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/ShahulHameedKonnakode" class="text-white text-decoration-none p-1 me-4">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5 ">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold"><img class="animate__animated animate__backInLeft logo"
+                                src="icons/logo_clr_1.png" alt=""><img class="animate__animated animate__bounce logo"
+                                src="icons/logo_clr_2.png" alt=""><img
+                                class="animate__animated animate__backInRight logo" src="icons/logo_clr_3.png" alt="">
+                        </h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: blue; height: 2px" />
+                        <p>
+                            I’m Shahul Hameed KK, a passionate Full Stack Developer with expertise in front-end and
+                            back-end development.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">Just About Me</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: blue; height: 2px" />
+                        <p>
+                            <a href="#mywork" class="text-white text-decoration-none text-decoration-none">My Work</a>
+                        </p>
+                        <p>
+                            <a href="#myShelf" class="text-white text-decoration-none text-decoration-none">My Shelf</a>
+                        </p>
+                        <p>
+                            <a href="myResume.html" class="text-white text-decoration-none text-decoration-none">My
+                                Resume</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white text-decoration-none text-decoration-none">Don't Imitate Me
+                                but jus follow </a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">Useful links</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: blue; height: 2px" />
+                        <p>
+                            <a href="www.dzoneads.com"
+                                class="text-white text-decoration-none text-decoration-none">Dzone Ads</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white text-decoration-none text-decoration-none">Become an
+                                Affiliate</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white text-decoration-none text-decoration-none">Enroll Our Online
+                                Couses</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white text-decoration-none text-decoration-none">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">Contact</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: blue; height: 2px" />
+                        <p><i class="fas fa-home mr-3"></i> Pulikkal, Malappuram</p>
+                        <p><i class="fas fa-envelope mr-3"></i> info@dzoneads.com</p>
+                        <p><i class="fas fa-phone mr-3"></i> + 91 954 483 7026</p>
+                        <p><i class="fas fa-print mr-3"></i> + 91 974 783 7026</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2025 Copyright:
+            <a class="text-white text-decoration-none link-primary" href="https://dzoneads.com/">Dzone Ads</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+</body>
+
+</html>
