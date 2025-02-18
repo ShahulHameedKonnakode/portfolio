@@ -5,11 +5,11 @@ $(document).ready(function () {
     const aboutImage = $(".img-about");
     const aboutText = $(".text-about");
     // const sideBar = $(".nav-item");
-    const closeIcon = $(".fa-xmark");
-    const openBar = $(".fa-bars")
-    const navBar = $(".navbar")
+    // const closeIcon = $(".fa-xmark");
+    // const openBar = $(".fa-bars")
+    // const navBar = $(".navbar")
 
-    const darkMode = $("#darkModeToggle")
+
 
 
 
@@ -70,30 +70,30 @@ $(document).ready(function () {
     );
 
 
-    sideBar.css({
-        display: "none"
-    })
-    closeIcon.css({
-        display: "none"
-    })
-    $(openBar).click(function () {
-        $(this).hide();
-        $(closeIcon).show();
-        $(sideBar).slideDown("slow");
-    })
-    $(closeIcon).click(function () {
-        $(sideBar).slideUp("slow");
-        $(closeIcon).hide();
-        $(openBar).show();
-    })
-    sideBar.hover(
-        function () {
-            $(this).css("transform", "scale(1.1)");
-        },
-        function () {
-            $(this).css("transform", "scale(1)");
-        }
-    );
+    // sideBar.css({
+    //     display: "none"
+    // })
+    // closeIcon.css({
+    //     display: "none"
+    // })
+    // $(openBar).click(function () {
+    //     $(this).hide();
+    //     $(closeIcon).show();
+    //     $(sideBar).slideDown("slow");
+    // })
+    // $(closeIcon).click(function () {
+    //     $(sideBar).slideUp("slow");
+    //     $(closeIcon).hide();
+    //     $(openBar).show();
+    // })
+    // sideBar.hover(
+    //     function () {
+    //         $(this).css("transform", "scale(1.1)");
+    //     },
+    //     function () {
+    //         $(this).css("transform", "scale(1)");
+    //     }
+    // );
 
     $(".history-text").hide();
     $(".history-h1").hover(function () {
