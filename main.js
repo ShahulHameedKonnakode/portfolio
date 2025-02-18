@@ -9,8 +9,33 @@ $(document).ready(function () {
     // const openBar = $(".fa-bars")
     // const navBar = $(".navbar")
 
+   
 
+    function setupHoverEffect(imgClass, headingClass) {
+        $(headingClass).hide(); // Hide the heading initially
+        $(imgClass).hover(
+            function () {
+                $(this).siblings(headingClass).fadeIn(300); // Show heading on hover
+            },
+            function () {
+                $(this).siblings(headingClass).fadeOut(300); // Hide heading on hover out
+            }
+        );
+    }
 
+    // Array of classes to apply the hover effect
+    const classes = [
+        { img: ".img-1", heading: ".h-1" },
+        { img: ".img-2", heading: ".h-2" },
+        { img: ".img-5", heading: ".h-5" },
+        { img: ".img-6", heading: ".h-6" },
+        { img: ".img-7", heading: ".h-7" }
+    ];
+
+    // Loop through the array and set up the hover effect for each pair
+    classes.forEach(({ img, heading }) => {
+        setupHoverEffect(img, heading);
+    });
 
 
 
